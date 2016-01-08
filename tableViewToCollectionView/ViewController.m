@@ -50,6 +50,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
+    cell.imageView.hidden = NO;
     cell.imageView.image = [UIImage imageNamed:_data[indexPath.row]];
     cell.textLabel.text = _data[indexPath.row];
     return cell;
